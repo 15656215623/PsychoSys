@@ -1,0 +1,48 @@
+.mylogo{
+	margin-left: 30%;
+	margin-top: 1%;
+}
+#rtab{
+    float: left;
+    width: 34%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 5px solid #fff;
+    text-align: center;
+    color: #A8B4BB;  
+}
+#ltab{
+    float: left;
+    width: 34%;
+    height: 57px;
+    line-height: 57px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 5px solid #fff;
+    
+    border-bottom-color: #4d7704;
+    color: #4d7704;
+}
+
+.heads{
+	width: 35%;
+	margin-left: 34%;
+}
+#regedit{
+width: 30%;
+margin-left: 33%;
+margin-top: 7%;	
+}
+#login{
+width: 30%;
+margin-left: 33%;
+margin-top: 7%;
+display: none;
+}
+#tell{
+width: 30%;
+margin-left: 33%;	
+}

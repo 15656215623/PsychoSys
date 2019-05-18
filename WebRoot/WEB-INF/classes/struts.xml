@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.action.extension" value="do,action,kk"></constant>
+	<package name="user" extends="struts-default">
+		<default-interceptor-ref name="defaultStack"></default-interceptor-ref>
+	<!--用户注册登录  -->
+	<action  name="regedit"  method="regedit_user"  class="userRegedit">
+	</action>
+	<action  name="login"  method="login_user"  class="userRegedit">
+	</action>
+	<!--短信校验码  -->
+	<action  name="sendmess"  method="sendSms"  class="getMessage">
+	</action>
+	<action  name="smess"  method="sendSms"  class="sendMessage">
+	</action>
+	<!-- 重置密码 -->
+	<action  name="forget"  method="forget"  class="userRegedit">
+	</action>
+	<!--老师注册 -->
+	<action  name="tuser"  method="regedit_user"  class="teacherUser">
+	</action>
+	<!-- 老师登录 -->
+	<action  name="tlogin"  method="login"  class="teacherLogin">
+	</action>
+	<!--  老师个人信息-->
+	<action  name="tinfo"  method="info"  class="teacherLogin">
+	</action>
+	<!--  老师个人信息修改-->
+	<action  name="tupdate"  method="update"  class="teacherLogin">
+	</action>
+	<!-- 老师咨询页面 -->
+	<action  name="showone"  method="showone"  class="teacherLogin">
+	</action>
+	<!-- 后台部分-查询 普通用户-->
+	<action  name="auser"  method="queryuser"  class="adminUser">
+	</action>
+	<!-- 后台部分-删除普通用户-->
+	<action  name="aduser"  method="deleteuser"  class="adminUser">
+	</action>
+	<!-- 后台部分-查询 律师用户-->
+	<action  name="ateacher"  method="show"  class="adminTeacher">
+	</action>
+	<!-- 后台部分-删除律师用户-->
+	<action  name="adteacher"  method="deleteuser"  class="adminTeacher">
+	</action>
+	<!-- 后台部分-查询待审核律师用户-->
+	<action  name="apass"  method="passuser"  class="adminTeacher">
+	</action>
+	<!-- 后台部分-执行审核通过律师用户-->
+	<action  name="getpass"  method="setpass"  class="adminTeacher">
+	</action>
+	<!-- 后台接受图片并且返回路径 -->
+	<action  name="returnurl"  method="copyfile"  class="saveImg">
+	</action>
+	<!-- 查询某个类型测试的题目  topic-->
+	<action  name="topic"  method="showOne"  class="showTopic">
+	</action>
+	<!-- 查询某个id的题目  topic -->
+		<action  name="one_topic"  method="showtopic"  class="showTopic">
+	</action>
+	<!-- 最主要的,显示的是测试题 -->
+	<action  name="test"  method="options"  class="startTest">
+	</action>
+	<!-- 显示的是结果 -->
+	<action  name="showres"  method="showRes"  class="showResult">
+	</action>
+	<!--  及时通信-->
+	<action  name="savechart"  method="insertdata"  class="saveChart">
+	</action>
+	<!-- 保存记录 -->
+	
+	<!-- lucene检索 -->
+	<action  name="lucene"  method="CreateIndex"  class="teacherIndex">
+	</action>
+	<!--分页查询所有的心理咨询师  -->
+	<action  name="alltea"  method="ateacher"  class="allTeacher">
+	</action>
+	<!-- 老师查询未读用户 -->
+	<action  name="noread"  method="UserMess"  class="noReadMess">
+	</action>
+	<!-- 进入咨询室 -->
+	<action  name="lqueryh"  method="lqueryh"  class="noReadMess">
+	</action>
+	<!--显示4条测试模块  -->
+	<action  name="showtest"  method="Show"  class="showTest">
+	</action>
+	<!-- 普通用户查询个人信息 -->
+	<action  name="quser"  method="quser"  class="userInfo">
+	</action>
+	<!-- 普通用户修改密码 -->
+	<action  name="updatepass"  method="updatepass"  class="userInfo">
+	</action>
+	<!-- 管理员创建题目 -->
+	<action  name="saveTopic"  method="saveTopic"  class="addTest">
+	</action>
+	<!-- 管理员为题目创建选项 -->
+	<action  name="createTitle"  method="createTitle"  class="addTitle">
+	</action>
+	</package>
+</struts>

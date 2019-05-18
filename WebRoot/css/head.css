@@ -1,0 +1,36 @@
+.logo{
+width: 203px;
+height: 136px;	
+}
+.head-li{
+	margin-top:0px;
+	margin-left: 200px;
+}
+.head-li li{
+	padding-left:70px;
+}
+.head-li li a{
+	color:red;
+}
+.searchpart{
+font-size: 12px;
+width: 176px;
+border: 1px solid #bdbdbd;
+}
+/* 导航栏 */
+.click{
+      color: green;
+    }
+.noneclick{
+	 color: #0b8bff;
+    }
+
+#others{
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 0%;
+}
+.option{
+font-size:14px;
+color:black;
+}

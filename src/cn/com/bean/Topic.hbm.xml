@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<!-- 实体类和表的映射 -->
+<class name="cn.com.bean.Topic" table="Topic" catalog="psy" >
+<id name="id" column="id"  type="java.lang.Integer">
+<generator class="identity"></generator>
+</id>
+<property name="kinds" type="java.lang.String" length="255"></property>
+<property name="subject" type="java.lang.String" length="255"></property>
+<property name="instroduce" type="java.lang.String" length="255"></property>
+<property name="img" type="java.lang.String" length="255"></property>
+<property name="number" type="java.lang.Integer" length="255"></property>
+</class>
+</hibernate-mapping>

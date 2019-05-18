@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<!-- 实体类和表的映射 -->
+<class name="cn.com.bean.Teacher" table="teacher" catalog="psy" >
+<id name="tid" column="tid"  type="java.lang.Integer">
+<generator class="identity"></generator>
+</id>
+<property name="imageUrl" type="java.lang.String" length="255"></property>
+<property name="username" type="java.lang.String" length="255"></property>
+<property name="tell" type="java.lang.String" length="255"></property>
+<property name="indentity" type="java.lang.String" length="255"></property>
+<property name="areas" type="java.lang.String" length="255"></property>
+<property name="quality" type="java.lang.String" length="255"></property>
+<property name="number" type="java.lang.String" length="255"></property>
+<property name="instroduce" type="java.lang.String" length="255"></property>
+<property name="time" type="java.lang.String" length="255"></property>
+<property name="password" type="java.lang.String" length="255"></property>
+<property name="flag" type="java.lang.Integer" length="255"></property>
+</class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<!-- 实体类和表的映射 -->
+<class name="cn.com.bean.Title" table="Title" catalog="psy" >
+<id name="tid" column="tid"  type="java.lang.Integer">
+<generator class="identity"></generator>
+</id>
+<property name="id" type="java.lang.Integer" length="255"></property>
+<property name="title" type="java.lang.String" length="255"></property>
+<!-- map集合属性 -->
+ <map name="options"  table="options"> 
+ <key column="tid"></key> 
+ <!-- map 中的key --> 
+ <index column="otitle" type="java.lang.String"></index>
+  <!-- map中的value -->
+  <element column="source" type="java.lang.Integer"></element>
+   </map>
+<!-- map集合属性 -->
+</class>
+</hibernate-mapping>

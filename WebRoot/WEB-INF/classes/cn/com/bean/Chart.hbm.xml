@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<!-- 实体类和表的映射 -->
+<class name="cn.com.bean.Chart" table="chart" catalog="psy" >
+<id name="cid" column="cid"  type="java.lang.Integer">
+<generator class="identity"></generator>
+</id>
+<property name="self" type="java.lang.String" length="255"></property>
+<property name="other" type="java.lang.String" length="255"></property>
+<property name="active" type="java.lang.String" length="255"></property>
+<property name="content" type="java.lang.String" length="255"></property>
+<property name="time" type="java.lang.String" length="255"></property>
+<property name="uflag" type="java.lang.Integer" length="255"></property>
+<property name="lflag" type="java.lang.Integer" length="255"></property>
+</class>
+</hibernate-mapping>

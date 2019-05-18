@@ -1,0 +1,61 @@
+/* 测试模块*/
+#test{
+width: 85%;
+height: 550px;
+margin-left: 8%;
+}
+.part{
+width: 23%;
+height: 280px;
+margin-left: 2%;
+position: relative;
+float: left;
+}
+.pimg{
+width: 100%;
+height: 100%;
+}
+.area{
+	margin-left: 2%;
+	color:#96b97d;
+	width:800px;
+}
+.more{
+	margin-left: 75%;
+}
+/* 测试模块*/
+/* 服务模块*/
+#chart{
+width: 85%;
+height: 550px;
+margin-left: 8%;
+margin-top: 13%;
+}
+.user_img{
+width: 74px;
+height: 74px;
+border-radius: 50%;
+top: 45px;
+left: 80px;
+position: absolute;
+}
+.cpart{
+width: 23%;
+height: 280px;
+margin-left: 2%;
+position: relative;
+float: left;	
+}
+.time{
+font-size: 14px;
+color: #666;
+line-height: 14px;
+margin-top: 44px;
+text-align: center;
+}
+/* 服务模块*/
+#enter{
+position: absolute;
+right: -2px;
+top: 469px;
+}
